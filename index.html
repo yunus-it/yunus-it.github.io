@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Yunus</title>
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.0.min.js"></script>
+</head>
+<body>
+	<header>
+        <nav>
+            <a class="icon night" id="toggle_dark" href="#"></a>
+        </nav>
+	    <a id="logo" href="https://">Yunus</a>
+	</header>
+    
+	    <article>
+			<a href="#"><h1>👋 Hey, I&#8217;m Yunus</h1></a>
+
+            <p style="color: #798496; font-size: 2em;">~</p>
+
+            <blockquote>
+                <p>Full stack developer</p>
+                <p>Dont stop codding when you are tired, stop when you are done!</p>
+                </blockquote>
+            <aside>
+                <a class="timestamp" id="current_date">
+                        <script>
+                        const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                        date = new Date();
+                        month = months[date.getMonth()];
+                        day = date.getDate();
+                        document.getElementById("current_date").innerHTML = day + " " + month ;
+                        </script>
+                </a>
+                <a class="icon permalink" href="mailto:yunusrahimov0@gmail.com"></a>
+            </aside>
+            &nbsp
+            &nbsp
+            &nbsp
+            &nbsp
+		</article>
+        
+    
+
+	<footer style="font-size: 1.3em; text-align: center;">
+        <a href="https://instagram.com/yunus_it/" style="color: #4c525c;"><i class="fab fa-instagram" id="fb-icon"></i></a>
+        <a href="https://github.com/yunus-it" style="color: #4c525c;"><i class="fab fa-github"></i></a>
+        <a href="https://t.me/yunus_rahimov" style="color: #4c525c;"><i class="fab fa-telegram"></i></a>
+        <a href="https://vk.com/" style="color: #4c525c;"><i class="fab fa-vk"></i></a>
+        
+    </footer>    
+	<script>
+        // dark READING TOGGLE
+        $('#toggle_dark').click(function(e) {
+        e.preventDefault();
+        $('body').toggleClass('dark');
+        });
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,369 @@
+    * {
+        margin: 0;
+        padding: 0;
+        vertical-align: baseline;
+        outline: none;
+        border: none;
+        
+        -webkit-font-smoothing: antialiased;
+           -moz-font-smoothing: antialiased;
+                font-smoothing: antialiased;
+    }
+    
+    ol, ul {
+        list-style: none;    
+    }
+    
+    input, textarea {
+        font: inherit;
+    }
+    .fab:hover {
+        transform: scale(1.3);
+    }
+    
+    
+    /*--SOME STUPID FIX--*/
+    
+    .stop-scrolling {
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    
+    /*--BODY--*/
+    
+    body {
+        font: 500 1.8em/1.9em "ff-tisa-web-pro", Georgia, serif;
+        color: #cfd2d7;
+        background: #1c1f23;
+        
+        -webkit-transition: background .1s linear;
+           -moz-transition: background .1s linear;
+             -o-transition: background .1s linear;
+                transition: background .1s linear;
+        
+        text-rendering: optimizeLegibility;
+        font-feature-settings: "liga", "dlig";
+        -webkit-font-feature-settings: "liga", "dlig";
+        -o-font-feature-settings: "liga", "dlig";
+        -ms-font-feature-settings: "liga", "dlig";
+        -moz-font-feature-settings: "liga", "dlig";
+    }
+    
+    body.dark {
+        color: #566070;
+        background: #f0f2f5;
+    }
+    
+    p {
+        margin: 15px 0 0 0;
+    }
+    
+    a {
+        color: #00a3cc;
+        text-decoration: none;
+        font-weight: bold;
+                
+        -webkit-transition: color .1s linear;
+           -moz-transition: color .1s linear;
+            -ms-transition: color .1s linear;
+             -o-transition: color .1s linear;
+                transition: color .1s linear;
+    } 
+    
+    p a:hover {
+        color: #333745;
+    }
+    
+    h1, h2, h3, h4 {
+        margin: 0 0 25px 0;
+        font-weight: 400;
+        color: #e4e7ea;
+        text-align: center;
+    }
+    
+    h1 {
+        
+        font-size: 60px; 
+        line-height: 70px;
+        padding-top: 20px;
+        font-family: 'brandon-grotesque';
+        font-weight: bold;
+        
+        }
+        
+    h2 {font-size: 34px; line-height: 36px;}
+    h3 {font-size: 28px; line-height: 30px;}
+    h4 {font-size: 20px; line-height: 22px;}
+    
+    body.dark h1,
+    body.dark h2,
+    body.dark h3,
+    body.dark h4 {
+        color: #2b3442;
+    }
+    
+    .timestamp { font-family: 'brandon-grotesque'; }
+    
+    blockquote {
+        margin: 40px 0 40px 0;
+        padding-left: 20px;
+        border-left: 6px solid #00a3cc;
+        font-style: italic;
+        font-weight: 700;
+    }
+    
+    .icon {
+        height: 32px;
+        width: 32px;
+        display: inline-block;
+        background: url('https://static.tumblr.com/gdqslez/Mwwmn9sgi/icon-sprites.png') no-repeat 0 0;
+    }
+    
+    .icon.twitter           {background-position: 0 -96px;}
+    .icon.instagram         {background-position: -32px -96px;}
+    .icon.dribbble          {background-position: -64px -96px;}
+    .icon.night             {background-position: -96px -96px;}
+    .icon.search            {background-position: -128px -96px;}
+    .icon.permalink         {background-position: -160px -96px;}
+    
+    .dark .icon.twitter     {background-position: 0 0;}
+    .dark .icon.instagram   {background-position: -32px 0;}
+    .dark .icon.dribbble    {background-position: -64px 0;}
+    .dark .icon.night       {background-position: -96px 0;}
+    .dark .icon.search      {background-position: -128px 0;}
+    .dark .icon.permalink   {background-position: -160px 0;}
+    
+    
+    
+    /*--ALL WRAPPERS--*/
+    
+    header, article, footer {
+        width: 80%;
+        max-width: 940px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    /*--HEADER--*/
+    
+    header {
+        margin-bottom: 100px;
+        padding: 20px 0;
+        font: 700 1em "brandon-grotesque", Georgia, serif;
+    }
+    
+    #logo {
+        height: 32px;
+        width: 198px;
+        display: block;
+        color: #4f555d;
+    }
+    
+    #logo:hover {
+        opacity: .7;
+    }
+    
+    #logo img {
+        width: 100%;
+    }
+    
+    header p {
+        margin: 5px 0 0 0;
+        float: left;
+    }
+    
+    header #toggler {
+        height: 42px;
+        width: 42px;
+        background: url('https://static.tumblr.com/ylbvj5j/2n1mh531i/sprite.png') no-repeat top left;
+        text-indent: -9999px;
+        float: right;
+    }
+    
+    
+    /*--NAV--*/
+    
+    nav {
+        float: right;
+    }
+    
+    nav a {
+        margin-left: 30px;
+    }
+    
+    
+    /*--BLOG--*/
+    
+    article {
+        margin-bottom: 100px;
+    }
+    
+    article.quote h2 {
+        text-align: left;
+    }
+    
+    article > h1 a {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    
+    article > h1 span {
+        width: 75px;
+        color: #2b3442;
+        font-weight: normal;
+        display: inline-block;
+    }
+    
+    article img {
+        height: auto;
+        max-width: 100%;
+        margin: 0 0 40px 0;
+        display: block;
+    
+    }
+    article p img {
+        margin: 0;
+    }
+    
+    article ol, article ul {
+        margin: 15px 0 0 0;
+        padding-left: 20px;
+    }
+    
+    article ol {
+        list-style: decimal;
+    }
+    
+    article ul {
+        list-style: square;
+    }
+    
+    pre, code {
+        margin: 0 0 15px 0;
+        padding: 15px 20px;
+        font-size: 15px;
+        line-height: 30px;
+        background: #e5e7ea;
+        word-wrap: break-word;
+        overflow: hidden;
+        
+    
+                
+        -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) inset;
+           -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) inset;
+             -o-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) inset;
+                box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) inset;
+    }
+    
+    
+    /*--ASIDE--*/
+    
+    aside {
+        margin-top: 30px;
+    }
+    
+    aside a {
+        color: #e4e7ea;
+    }
+    
+    body.dark aside a {
+        color: #384150;
+    }
+    
+    .permalink {
+        float: right;
+    }
+    
+    
+    
+    footer {
+        margin-bottom: 100px;
+    }
+    
+    footer a {
+        margin-right: 15px;
+    }
+    
+    footer a {
+        margin-left: 15px;
+    }
+    
+    
+    /*--RESPONSIVENESSNESS--*/
+    
+    @media only screen and (max-width: 768px) {
+        
+        body {
+            font-size: 18px;
+            line-height: 28px;
+        }
+        
+        h1, h2, h3, h4 {
+            margin: 0 0 15px 0;
+        }
+        
+        h1 {font-size: 30px; line-height: 32px;}
+        h2 {font-size: 28px; line-height: 30px;}
+        h3 {font-size: 20px; line-height: 22px;}
+        h4 {font-size: 18px; line-height: 20px;}
+        
+        header, article, footer {
+            margin-bottom: 60px;
+        }
+        
+        
+        
+        input {
+            width: 75%;
+        }
+        
+    }
+    
+    @media only screen and (max-width: 640px) {
+        
+        body {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        
+        header, article, footer {
+            margin-bottom: 45px;
+        }
+        
+        input {
+            width: 70%;
+            font-size: 24px;
+        }
+        
+    }
+    
+    @media  only screen and (-webkit-min-device-pixel-ratio: 2),
+            only screen and (   min--moz-device-pixel-ratio: 2),
+            only screen and (     -o-min-device-pixel-ratio: 2/1),
+            only screen and (        min-device-pixel-ratio: 2) {
+    
+        .icon {
+            -webkit-background-size: 192px 96px;
+               -moz-background-size: 192px 96px;
+                 -o-background-size: 192px 96px;
+                    background-size: 192px 96px;
+        }
+        
+        .dark .icon.twitter           {background-position: 0 -16px;}
+        .dark .icon.instagram         {background-position: -32px -16px;}
+        .dark .icon.dribbble          {background-position: -64px -16px;}
+        .dark .icon.night             {background-position: -96px -16px;}
+        .dark .icon.search            {background-position: -128px -16px;}
+        .dark .icon.permalink         {background-position: -160px -16px;}
+        
+        .icon.twitter     {background-position: 0 -64px;}
+        .icon.instagram   {background-position: -32px -64px;}
+        .icon.dribbble    {background-position: -64px -64px;}
+        .icon.night       {background-position: -96px -64px;}
+        .icon.search      {background-position: -128px -64px;}
+        .icon.permalink   {background-position: -160px -64px;}
+    
+    }
+        
+    
